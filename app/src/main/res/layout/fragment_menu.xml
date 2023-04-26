@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment">
+    tools:context=".MenuFragment"
+    android:background="@color/white">
 
 
     <TextView
@@ -14,8 +15,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alegreya_sc"
         android:text="Abington Heights Boys Basketball 22-23"
         android:textAlignment="center"
+        android:textColor="@color/darkBlue"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,23 +27,24 @@
 
     <ImageView
         android:id="@+id/AHHSLogo"
-        android:layout_width="85dp"
-        android:layout_height="108dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:adjustViewBounds="false"
+        android:background="@color/white"
         android:cropToPadding="false"
         android:src="@drawable/AHHSlogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AHBB"
-        app:layout_constraintVertical_bias="0.608" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.202" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="338dp"
         android:layout_height="215dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/team"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -51,8 +55,10 @@
         android:id="@+id/scheduleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/alegreya_sc"
         android:text="Schedule"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/TeamInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,8 +67,10 @@
         android:id="@+id/TeamInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/alegreya_sc"
         android:text="Team Info"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/TeamStatsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,8 +79,10 @@
         android:id="@+id/TeamStatsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/alegreya_sc"
         android:text="Team Stats"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/PhotoGalleryButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -81,9 +91,24 @@
         android:id="@+id/PhotoGalleryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alegreya_sc"
         android:text="Photo Gallery"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/basketball"
+        app:layout_constraintBottom_toBottomOf="@+id/AHHSLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/scheduleButton"
+        app:layout_constraintTop_toTopOf="@+id/AHHSLogo"
+        app:layout_constraintVertical_bias="0.199" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

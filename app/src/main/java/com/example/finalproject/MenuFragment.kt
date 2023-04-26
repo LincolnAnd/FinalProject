@@ -16,7 +16,15 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
+        val myOnClickListener: View.OnClickListener = View.OnClickListener {view->
+            when(view.id){
+                R.id.scheduleButton-> rootView.findNavController().navigate(action)
+                R.id.TeamInfo->
+                R.id.TeamStatsButton->
+                R.id.PhotoGalleryButton->
 
+            }
+        }
         return binding.root
     }
 
