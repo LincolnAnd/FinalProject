@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/AHname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/andada"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Abington Heights" />
+
+    <TextView
+        android:id="@+id/otherTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/andada"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/AHname"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Opposing school" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Comets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/andada"
+        android:text="Comets"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/AHname"
+        app:layout_constraintStart_toStartOf="@+id/AHname"
+        app:layout_constraintTop_toBottomOf="@+id/AHname" />
+
+    <TextView
+        android:id="@+id/otherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/andada"
+        android:text="Team name"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/otherTeam"
+        app:layout_constraintStart_toStartOf="@+id/otherTeam"
+        app:layout_constraintTop_toBottomOf="@+id/otherTeam" />
+
+    <TextView
+        android:id="@+id/WinOrLoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="cursive"
+        android:text="W"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AHscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/Comets"
+        app:layout_constraintStart_toStartOf="@+id/Comets"
+        app:layout_constraintTop_toBottomOf="@+id/Comets" />
+
+    <TextView
+        android:id="@+id/otherScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/otherName"
+        app:layout_constraintStart_toStartOf="@+id/otherName"
+        app:layout_constraintTop_toBottomOf="@+id/otherName" />
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/otherScore"
+        app:layout_constraintStart_toEndOf="@+id/AHscore"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,5 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alegreya_sc</item>
+        <item>@font/amethysta</item>
+        <item>@font/andada</item>
+        <item>@font/baloo_bhai</item>
+        <item>@font/be_vietnam_thin</item>
+        <item>@font/creepster</item>
     </array>
 </resources>
