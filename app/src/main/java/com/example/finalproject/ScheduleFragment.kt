@@ -16,7 +16,9 @@ class ScheduleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentScheduleBinding.inflate(inflater, container, false)
-
+//        val games=listOf(Game())
+//val myAdapter=GameAdapter(games)
+//        binding.recyclerView.adapter=myAdapter
         return binding.root
     }
 

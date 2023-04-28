@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.finalproject.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_pictureGalleryFragment"
+            app:destination="@id/pictureGalleryFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_teamInfoFragment"
+            app:destination="@id/teamInfoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_teamStatsFragment"
+            app:destination="@id/teamStatsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_scheduleFragment2"
+            app:destination="@id/scheduleFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pictureGalleryFragment"
+        android:name="com.example.finalproject.PictureGalleryFragment"
+        android:label="fragment_picture_gallery"
+        tools:layout="@layout/fragment_picture_gallery" />
+    <fragment
+        android:id="@+id/playerStatsFragment"
+        android:name="com.example.finalproject.PlayerStatsFragment"
+        android:label="fragment_player_stats"
+        tools:layout="@layout/fragment_player_stats" />
+    <fragment
+        android:id="@+id/teamInfoFragment"
+        android:name="com.example.finalproject.TeamInfoFragment"
+        android:label="fragment_team_info"
+        tools:layout="@layout/fragment_team_info" >
+        <action
+            android:id="@+id/action_teamInfoFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamStatsFragment"
+        android:name="com.example.finalproject.TeamStatsFragment"
+        android:label="fragment_team_stats"
+        tools:layout="@layout/fragment_team_stats" />
+    <fragment
+        android:id="@+id/scheduleFragment2"
+        android:name="com.example.finalproject.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+</navigation>
