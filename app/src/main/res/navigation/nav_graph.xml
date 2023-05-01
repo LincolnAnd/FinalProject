@@ -20,8 +20,8 @@
             android:id="@+id/action_menuFragment_to_teamStatsFragment"
             app:destination="@id/teamStatsFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_scheduleFragment2"
-            app:destination="@id/scheduleFragment2" />
+            android:id="@+id/action_menuFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
     </fragment>
     <fragment
         android:id="@+id/pictureGalleryFragment"
@@ -48,7 +48,7 @@
         android:label="fragment_team_stats"
         tools:layout="@layout/fragment_team_stats" />
     <fragment
-        android:id="@+id/scheduleFragment2"
+        android:id="@+id/scheduleFragment"
         android:name="com.example.finalproject.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" />

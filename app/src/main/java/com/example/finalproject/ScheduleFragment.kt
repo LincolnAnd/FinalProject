@@ -16,9 +16,16 @@ class ScheduleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentScheduleBinding.inflate(inflater, container, false)
-//        val games=listOf(Game())
-//val myAdapter=GameAdapter(games)
-//        binding.recyclerView.adapter=myAdapter
+        val games=listOf(Game("Wyoming Seminary","Blue Knights",76,32,"12/06/22")
+        ,Game("Tunkhannock","Tigers",81,35,"12/08/22")
+        ,Game("Executive Education","Academy",58,55,"12/10/22")
+        ,Game("Naticoke Area","team",64,33,"12/14/22"),
+        Game("Valley West","team",79,24,"12/19/22"),
+        Game("Danville","team",71,23,"12/27/22"),
+        Game("Emmaus","team",58,55,"12/29/22"),
+        Game("Scranton","Knights",56,49,"01,03,23"))
+val myAdapter=GameAdapter(games)
+        binding.recyclerView.adapter=myAdapter
         return binding.root
     }
 
