@@ -8,25 +8,30 @@
 
     <TextView
         android:id="@+id/AHname"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/andada"
-        android:textSize="24sp"
+        android:textColor="#FF000000"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/WinOrLoss"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Abington Heights" />
 
     <TextView
         android:id="@+id/otherTeam"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/andada"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/AHname"
+        android:textColor="#FF000000"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/WinOrLoss"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="Opposing school" />
 
     <TextView
@@ -45,9 +50,9 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/andada"
         android:text="Comets"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/AHname"
-        app:layout_constraintStart_toStartOf="@+id/AHname"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/WinOrLoss"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AHname" />
 
     <TextView
@@ -57,9 +62,9 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/andada"
         android:text="Team name"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/otherTeam"
-        app:layout_constraintStart_toStartOf="@+id/otherTeam"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/WinOrLoss"
         app:layout_constraintTop_toBottomOf="@+id/otherTeam" />
 
     <TextView
@@ -82,8 +87,8 @@
         android:fontFamily="@font/baloo_bhai"
         android:text="TextView"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/Comets"
-        app:layout_constraintStart_toStartOf="@+id/Comets"
+        app:layout_constraintEnd_toStartOf="@+id/dash"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Comets" />
 
     <TextView
@@ -94,19 +99,19 @@
         android:fontFamily="@font/baloo_bhai"
         android:text="TextView"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/otherName"
-        app:layout_constraintStart_toStartOf="@+id/otherName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/WinOrLoss"
         app:layout_constraintTop_toBottomOf="@+id/otherName" />
 
     <TextView
         android:id="@+id/dash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_width="9dp"
+        android:layout_height="53dp"
         android:fontFamily="@font/baloo_bhai"
         android:text="-"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/otherScore"
-        app:layout_constraintStart_toEndOf="@+id/AHscore"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WinOrLoss" />
 </androidx.constraintlayout.widget.ConstraintLayout>

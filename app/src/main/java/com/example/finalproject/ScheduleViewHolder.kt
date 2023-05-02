@@ -20,6 +20,7 @@ class ScheduleViewHolder(val binding: ScheduleItemLayoutBinding) :
         binding.otherScore.text = currentGame.OpponentScore.toString()
         binding.otherTeam.text = currentGame.opponentSchool
         binding.otherName.text = currentGame.opponentName
+        binding.AHname.text="Abington Heights"
 
     }
 }
