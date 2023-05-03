@@ -10,5 +10,8 @@
     <color name="darkBlue">#0A2448</color>
     <color name="YaleBlue">#113E7E</color>
     <color name="LightBlue">#0077EE</color>
+    <color name="red"> #ff0006</color>
+    <color name="green"> #33cc5a</color>
+
 
 </resources>

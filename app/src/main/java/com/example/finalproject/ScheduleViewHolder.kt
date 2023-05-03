@@ -12,8 +12,11 @@ class ScheduleViewHolder(val binding: ScheduleItemLayoutBinding) :
     fun bindGame(game: Game) {
         currentGame = game
         var result: String = "W"
+        binding.WinOrLoss.setTextColor(@color/red)
+
         if (currentGame.AbingtonScore < currentGame.OpponentScore) {
             result = "L"
+            binding.WinOrLoss.setTextColor(@color/red)
         }
         binding.WinOrLoss.text = result
         binding.AHscore.text = currentGame.AbingtonScore.toString()
@@ -21,6 +24,7 @@ class ScheduleViewHolder(val binding: ScheduleItemLayoutBinding) :
         binding.otherTeam.text = currentGame.opponentSchool
         binding.otherName.text = currentGame.opponentName
         binding.AHname.text="Abington Heights"
+
 
     }
 }
