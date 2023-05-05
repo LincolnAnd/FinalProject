@@ -1,5 +1,7 @@
 package com.example.finalproject
 
+import android.annotation.SuppressLint
+import android.graphics.Color
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finalproject.databinding.ScheduleItemLayoutBinding
 import kotlin.properties.Delegates
@@ -9,14 +11,15 @@ class ScheduleViewHolder(val binding: ScheduleItemLayoutBinding) :
     private lateinit var currentGame: Game
 
 
+    @SuppressLint("ResourceAsColor")
     fun bindGame(game: Game) {
         currentGame = game
         var result: String = "W"
-        binding.WinOrLoss.setTextColor(@color/red)
+        binding.WinOrLoss.setTextColor(Color.parseColor("#33cc5a"))
 
         if (currentGame.AbingtonScore < currentGame.OpponentScore) {
             result = "L"
-            binding.WinOrLoss.setTextColor(@color/red)
+            binding.WinOrLoss.setTextColor(Color.parseColor("#ff0006"))
         }
         binding.WinOrLoss.text = result
         binding.AHscore.text = currentGame.AbingtonScore.toString()
