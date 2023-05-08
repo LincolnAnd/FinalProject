@@ -7,19 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.finalproject.databinding.FragmentMenuBinding
 import com.example.finalproject.databinding.FragmentScheduleBinding
+import com.example.finalproject.databinding.ScheduleItemLayoutBinding
 
 class ScheduleFragment : Fragment() {
-    private var _binding: FragmentScheduleBinding? = null
+    private var _binding: ScheduleItemLayoutBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentScheduleBinding.inflate(inflater, container, false)
+        _binding = ScheduleItemLayoutBinding.inflate(inflater, container, false)
         val games=listOf(Game("Wyoming Sem","Blue Knights",76,32,"12/06/22")
         ,Game("Tunkhannock","Tigers",81,35,"12/08/22")
         ,Game("Executive Education","Academy",58,55,"12/10/22")
-        ,Game("Naticoke Area","team",64,33,"12/14/22"),
+        ,Game("Naticoke Area","Trojans",64,33,"12/14/22"),
         Game("Valley West","Spartans",79,24,"12/19/22"),
         Game("Danville","Ironmen",71,23,"12/27/22"),
         Game("Emmaus","Hornets",58,55,"12/29/22"),
@@ -42,7 +43,7 @@ class ScheduleFragment : Fragment() {
         ,Game("North Pocono","Trojans",47,24,"02/24/23")
         ,Game("West Scranton","Invaders",60,38,"03/03/23")
         ,Game("Murrell Dobbins","Mustangs",67,56,"03/11/23")
-        ,Game("Pocono Mtn. W","team",61,56,"03/15/23"),
+        ,Game("Pocono Mtn. W","Panthers",61,56,"03/15/23"),
         Game("Imhotep","Panthers",38,65,"03/17/23"))
 val myAdapter=GameAdapter(games)
         binding.recyclerView.adapter=myAdapter

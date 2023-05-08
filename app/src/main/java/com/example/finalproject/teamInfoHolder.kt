@@ -6,13 +6,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.finalproject.databinding.ScheduleItemLayoutBinding
 import kotlin.properties.Delegates
 
-class ScheduleViewHolder(val binding: ScheduleItemLayoutBinding) :
+class TeamInfoHolder(val binding: ScheduleItemLayoutBinding) :
     RecyclerView.ViewHolder(binding.root) {
-    private lateinit var currentGame: Game
+    private lateinit var currentPlayer: Player
 
 
     @SuppressLint("ResourceAsColor")
-    fun bindGame(game: Game) {
+    fun bindPlayer(player: Player) {
         currentGame = game
         var result: String = "W"
         binding.WinOrLoss.setTextColor(Color.parseColor("#33cc5a"))
