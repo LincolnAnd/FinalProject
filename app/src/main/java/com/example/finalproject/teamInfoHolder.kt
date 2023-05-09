@@ -4,29 +4,26 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finalproject.databinding.ScheduleItemLayoutBinding
+import com.example.finalproject.databinding.TeamInfoItemLayoutBinding
 import kotlin.properties.Delegates
 
-class TeamInfoHolder(val binding: ScheduleItemLayoutBinding) :
+class TeamInfoHolder(val binding: TeamInfoItemLayoutBinding) :
     RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentPlayer: Player
 
 
     @SuppressLint("ResourceAsColor")
     fun bindPlayer(player: Player) {
-        currentGame = game
-        var result: String = "W"
-        binding.WinOrLoss.setTextColor(Color.parseColor("#33cc5a"))
+        currentPlayer = player
+        binding.name.text = currentPlayer.name
+        binding.grade.text = currentPlayer.grade
+        binding.height.text = currentPlayer.Height
+        binding.weight.text = currentPlayer.weight
+        binding.position.text=currentPlayer.position
+        binding.number.text = currentPlayer.number.toString()
+//        binding.imageView2.setImageResource()
 
-        if (currentGame.AbingtonScore < currentGame.OpponentScore) {
-            result = "L"
-            binding.WinOrLoss.setTextColor(Color.parseColor("#ff0006"))
-        }
-        binding.WinOrLoss.text = result
-        binding.AHscore.text = currentGame.AbingtonScore.toString()
-        binding.otherScore.text = currentGame.OpponentScore.toString()
-        binding.otherTeam.text = currentGame.opponentSchool
-        binding.otherName.text = currentGame.opponentName
-        binding.name.text="Abington Heights"
+
 
 
     }
