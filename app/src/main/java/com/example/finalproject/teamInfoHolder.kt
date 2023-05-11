@@ -11,8 +11,8 @@ class TeamInfoHolder(val binding: TeamInfoItemLayoutBinding) :
     RecyclerView.ViewHolder(binding.root) {
     private lateinit var currentPlayer: Player
 
-
     @SuppressLint("ResourceAsColor")
+
     fun bindPlayer(player: Player) {
         currentPlayer = player
         binding.name.text = currentPlayer.name
@@ -21,7 +21,7 @@ class TeamInfoHolder(val binding: TeamInfoItemLayoutBinding) :
         binding.weight.text = currentPlayer.weight
         binding.position.text=currentPlayer.position
         binding.number.text = currentPlayer.number.toString()
-//        binding.imageView2.setImageResource()
+        binding.pic.setImageResource(currentPlayer.picture)
 
 
 

@@ -18,18 +18,18 @@ class TeamInfoFragment : Fragment() {
     ): View? {
         _binding = TeamInfoItemLayoutBinding.inflate(inflater, container, false)
         val players=listOf(
-            Player("Mason Fedor","Junior","Forward","6\'4\"","180",R.drawable.patcropped,10),
-            Player("Matt Show","Senior","Guard","5\'11\"","165",0,11)
-            ,Player("Will Marion","Junior","Guard","6\'1\"","165",0,12)
-            ,Player("Patrick Walsh","Senior","Guard/Forward","6\'0\"","170",0,22)
-            ,Player("Ryan Nealon","Junior","Guard","6\'1\"","165",0,23)
-            ,Player("Roman Cutrufello","Senior","Guard","5\'11\"","160",0,24)
-            ,Player("Lincoln Anderson","Junior","Guard","6\'0\"","155",0,25)
-            ,Player("Gene Curtin","Junior","Guard/Forward","6\'2\"","155",0,33)
-            ,Player("Jordan Shaffer","Freshman","Guard","6\'2\"","150",0,35)
-            ,Player("Zach Brister","Senior","Forward","6\'2\"","180",0,40)
-            ,Player("Jack Petrillo","Senior","Forward","6\'2\"","205",0,42)
-            ,Player("Robby Lucas","Sophmore","Forward","6\'2\"","185",0,44))
+            Player("Mason Fedor","Junior","Forward","6\'4\"","180",R.drawable.dorsquare,10),
+            Player("Matt Show","Senior","Guard","5\'11\"","165",R.drawable.mattsquare,11)
+            ,Player("Will Marion","Junior","Guard","6\'1\"","165",R.drawable.will,12)
+            ,Player("Patrick Walsh","Senior","Guard/Forward","6\'0\"","170",R.drawable.patsquare,22)
+            ,Player("Ryan Nealon","Junior","Guard","6\'1\"","165",R.drawable.ryansquare,23)
+            ,Player("Roman Cutrufello","Senior","Guard","5\'11\"","160",R.drawable.romansquare,24)
+            ,Player("Lincoln Anderson","Junior","Guard","6\'0\"","155",R.drawable.lincolnsquare,25)
+            ,Player("Gene Curtin","Junior","Guard/Forward","6\'2\"","155",R.drawable.genesquare,33)
+            ,Player("Jordan Shaffer","Freshman","Guard","6\'2\"","150",R.drawable.shaffersquare,35)
+            ,Player("Zach Brister","Senior","Forward","6\'2\"","180",R.drawable.bristersquare,40)
+            ,Player("Jack Petrillo","Senior","Forward","6\'2\"","205",R.drawable.dudesquare,42)
+            ,Player("Robby Lucas","Sophmore","Forward","6\'2\"","185",R.drawable.robbysquare,44))
 
 
             val myAdapter2=PlayerAdapter(players)

@@ -29,14 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="107dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ahhs" />
+
 
     <TextView
         android:id="@+id/name"
@@ -48,10 +41,17 @@
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/pic"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Lincoln Anderson" />
-
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bristersquare" />
     <TextView
         android:id="@+id/grade"
         android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/pic"
         app:layout_constraintStart_toStartOf="@+id/grade"
         app:layout_constraintTop_toBottomOf="@+id/height"
         tools:text="position" />
