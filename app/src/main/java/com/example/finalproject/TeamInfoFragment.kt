@@ -29,7 +29,7 @@ class TeamInfoFragment : Fragment() {
             ,Player("Jordan Shaffer","Freshman","Guard","6\'2\"","150",R.drawable.shaffersquare,35)
             ,Player("Zach Brister","Senior","Forward","6\'2\"","180",R.drawable.bristersquare,40)
             ,Player("Jack Petrillo","Senior","Forward","6\'2\"","205",R.drawable.dudesquare,42)
-            ,Player("Robby Lucas","Sophmore","Forward","6\'2\"","185",R.drawable.robbysquare,44))
+           , Player("Robby Lucas","Sophmore","Forward","6\'2\"","185",R.drawable.robbysquare,44))
 
 
             val myAdapter2=PlayerAdapter(players)

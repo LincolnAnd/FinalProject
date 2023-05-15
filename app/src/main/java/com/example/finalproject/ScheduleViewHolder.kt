@@ -27,6 +27,7 @@ class ScheduleViewHolder(val binding: ScheduleItemLayoutBinding) :
         binding.otherTeam.text = currentGame.opponentSchool
         binding.otherName.text = currentGame.opponentName
         binding.name.text="Abington Heights"
+        binding.date.text=currentGame.date
 
 
     }

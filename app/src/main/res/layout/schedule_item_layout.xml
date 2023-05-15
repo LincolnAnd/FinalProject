@@ -7,6 +7,20 @@
     android:padding="8dp"
     android:background="@color/darkBlue">
 
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/andada"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
@@ -14,7 +28,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/andada"
         android:textColor="@color/LightBlue"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:textStyle="bold"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +43,11 @@
         android:layout_height="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/andada"
-        android:textColor="@color/LightBlue"
-        android:textStyle="bold"
-
-        android:textSize="16sp"
         android:textAlignment="center"
+        android:textColor="@color/LightBlue"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.90"
@@ -54,11 +68,11 @@
         android:id="@+id/Comets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/andada"
         android:text="Comets"
-        android:textSize="14sp"
         android:textColor="@color/LightBlue"
+        android:textSize="14sp"
         android:textStyle="bold"
 
         app:layout_constraintEnd_toEndOf="@+id/name"
@@ -69,15 +83,15 @@
         android:id="@+id/otherName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/andada"
         android:text="Team name"
-        android:textColor="@color/LightBlue"
-        android:textStyle="bold"
-
         android:textAlignment="center"
+        android:textColor="@color/LightBlue"
 
         android:textSize="14sp"
+
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/otherTeam"
         app:layout_constraintStart_toStartOf="@+id/otherTeam"
         app:layout_constraintTop_toBottomOf="@+id/otherTeam" />
@@ -149,4 +163,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
