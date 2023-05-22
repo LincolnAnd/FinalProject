@@ -99,17 +99,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TeamStatsButton" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="85dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/basketball"
-        app:layout_constraintBottom_toBottomOf="@+id/AHHSLogo"
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/scheduleButton"
-        app:layout_constraintTop_toTopOf="@+id/AHHSLogo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toEndOf="@+id/AHHSLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/basketballa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

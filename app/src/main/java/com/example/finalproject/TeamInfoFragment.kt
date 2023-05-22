@@ -1,5 +1,6 @@
 package com.example.finalproject
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,6 +24,10 @@ class TeamInfoFragment : Fragment() {
 
             val myAdapter2=PlayerAdapter(viewModel.players)
         binding.recyclerVieww.adapter=myAdapter2
+        var mediaPlayer = MediaPlayer.create(context, R.raw.music)
+        mediaPlayer.start()
+        mediaPlayer.isLooping=true
+
         return binding.root
     }
 
