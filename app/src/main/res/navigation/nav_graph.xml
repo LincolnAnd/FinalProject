@@ -32,7 +32,20 @@
         android:id="@+id/playerStatsFragment"
         android:name="com.example.finalproject.PlayerStatsFragment"
         android:label="fragment_player_stats"
-        tools:layout="@layout/fragment_player_stats" />
+        tools:layout="@layout/fragment_player_stats" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="number"
+            app:argType="integer" />
+        <argument
+            android:name="pic"
+            app:argType="integer" />
+        <argument
+            android:name="grade"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/teamInfoFragment"
         android:name="com.example.finalproject.TeamInfoFragment"
