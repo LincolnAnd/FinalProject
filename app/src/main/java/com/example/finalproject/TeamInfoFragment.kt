@@ -15,6 +15,7 @@ class TeamInfoFragment : Fragment() {
     private var _binding: TeamInfoItemLayoutBinding? = null
     private val binding get() = _binding!!
     private val viewModel:viewModel by viewModels()
+    private lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,13 +25,16 @@ class TeamInfoFragment : Fragment() {
 
             val myAdapter2=PlayerAdapter(viewModel.players)
         binding.recyclerVieww.adapter=myAdapter2
-        var mediaPlayer = MediaPlayer.create(context, R.raw.music)
+       mediaPlayer = MediaPlayer.create(context, R.raw.music)
         mediaPlayer.start()
         mediaPlayer.isLooping=true
 
         return binding.root
     }
-
+    override fun onStop() {
+        super.onStop()
+        mediaPlayer.release()
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

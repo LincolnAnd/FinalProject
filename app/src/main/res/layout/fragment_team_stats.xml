@@ -20,12 +20,23 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_sports_basketball_24"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
     <TextView
         android:id="@+id/ft4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/andada"
+        android:fontFamily="@font/almendra"
         android:text="Total points: 1686"
         android:textColor="@color/YaleBlue"
         android:textSize="24sp"
@@ -39,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/andada"
+        android:fontFamily="@font/almendra"
         android:text="Three pointers made:  169"
         android:textColor="@color/YaleBlue"
         android:textSize="24sp"
@@ -53,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/andada"
+        android:fontFamily="@font/almendra"
         android:text="Free throws Attempted:  452"
         android:textColor="@color/YaleBlue"
         android:textSize="24sp"
@@ -67,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/andada"
+        android:fontFamily="@font/almendra"
         android:text="Free throws made:  299"
         android:textColor="@color/YaleBlue"
         android:textSize="24sp"
@@ -81,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/andada"
+        android:fontFamily="@font/creepster"
         android:text="Team Stats"
         android:textColor="@color/YaleBlue"
         android:textSize="48sp"
@@ -95,16 +106,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
-        android:fontFamily="@font/andada"
+        android:fontFamily="@font/almendra"
+        android:text="Field Goals:  609  "
         android:textColor="@color/YaleBlue"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/ft"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/ft"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-       android:text="Field Goals:  609  " />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_sports_basketball_24"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
