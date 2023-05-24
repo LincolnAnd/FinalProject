@@ -14,7 +14,7 @@ class TeamInfoHolder(val binding: TeamInfoItemLayoutBinding) :
     private lateinit var currentPlayer: Player
     init{
         binding.root.setOnClickListener({view->
-            val action = TeamInfoFragmentDirections.actionTeamInfoFragmentToPlayerStatsFragment()
+            val action = TeamInfoFragmentDirections.actionTeamInfoFragmentToPlayerStatsFragment(binding.name.text.toString(),binding.number.text.toString(),binding.grade.text.toString(),binding.pic.id)
             binding.root.findNavController().navigate(action)
         })
     }

@@ -16,6 +16,12 @@ class PlayerStatsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentPlayerStatsBinding.inflate(inflater, container, false)
+val args=PlayerStatsFragmentArgs.fromBundle(requireArguments())
+        binding.nameTV.text=args.name
+        binding.gradeTV.text=args.grade
+        binding.numberTV.text=args.number
+        var pic =args.pic
+        binding.picTV.setImageResource(pic)
 
         return binding.root
     }

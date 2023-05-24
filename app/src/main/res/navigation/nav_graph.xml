@@ -38,13 +38,13 @@
             app:argType="string" />
         <argument
             android:name="number"
-            app:argType="integer" />
-        <argument
-            android:name="pic"
-            app:argType="integer" />
+            app:argType="string" />
         <argument
             android:name="grade"
             app:argType="string" />
+        <argument
+            android:name="pic"
+            app:argType="reference" />
     </fragment>
     <fragment
         android:id="@+id/teamInfoFragment"
