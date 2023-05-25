@@ -22,6 +22,9 @@ val args=PlayerStatsFragmentArgs.fromBundle(requireArguments())
         binding.numberTV.text=args.number
         var pic =args.pic
         binding.picTV.setImageResource(pic)
+        binding.points.text="Total Points:  "+args.totalP
+        binding.fgs.text="Total Feild Goals:  "+args.fg
+
 
         return binding.root
     }

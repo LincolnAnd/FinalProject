@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/alata</item>
         <item>@font/alegreya_sc</item>
         <item>@font/almendra</item>
         <item>@font/amethysta</item>
         <item>@font/andada</item>
         <item>@font/baloo_bhai</item>
         <item>@font/be_vietnam_thin</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/butcherman</item>
         <item>@font/creepster</item>
+        <item>@font/diplomata</item>
+        <item>@font/sedgwick_ave_display</item>
     </array>
 </resources>

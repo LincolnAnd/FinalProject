@@ -45,6 +45,12 @@
         <argument
             android:name="pic"
             app:argType="reference" />
+        <argument
+            android:name="totalP"
+            app:argType="integer" />
+        <argument
+            android:name="fg"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/teamInfoFragment"

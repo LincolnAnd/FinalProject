@@ -32,18 +32,18 @@ class viewModel: ViewModel()  {
         ,Game("Pocono Mtn. W","Panthers",61,56,"03/15/23"),
         Game("Imhotep","Panthers",38,65,"03/17/23"))
     val players=listOf(
-        Player("Mason Fedor","Junior","Forward","6\'4\"","180",R.drawable.dorsquare,10),
-        Player("Matt Show","Senior","Guard","5\'11\"","165",R.drawable.mattsquare,11)
-        ,Player("Will Marion","Junior","Guard","6\'1\"","165",R.drawable.will,12)
-        ,Player("Patrick Walsh","Senior","Guard/Forward","6\'0\"","170",R.drawable.patsquare,22)
-        ,Player("Ryan Nealon","Junior","Guard","6\'1\"","165",R.drawable.ryansquare,23)
-        ,Player("Roman Cutrufello","Senior","Guard","5\'11\"","160",R.drawable.romansquare,24)
-        ,Player("Lincoln Anderson","Junior","Guard","6\'0\"","155",R.drawable.lincolnsquare,25)
-        ,Player("Gene Curtin","Junior","Guard/Forward","6\'2\"","155",R.drawable.genesquare,33)
-        ,Player("Jordan Shaffer","Freshman","Guard","6\'2\"","150",R.drawable.shaffersquare,35)
-        ,Player("Zach Brister","Senior","Forward","6\'2\"","180",R.drawable.bristersquare,40)
-        ,Player("Jack Petrillo","Senior","Forward","6\'2\"","205",R.drawable.dudesquare,42)
-        , Player("Robby Lucas","Sophmore","Forward","6\'2\"","185",R.drawable.robbysquare,44))
+        Player("Mason Fedor","Junior","Forward","6\'4\"","180",R.drawable.dorsquare,10,350,129),
+        Player("Matt Show","Senior","Guard","5\'11\"","165",R.drawable.mattsquare,11,15,5)
+        ,Player("Will Marion","Junior","Guard","6\'1\"","165",R.drawable.will,12,270,104)
+        ,Player("Patrick Walsh","Senior","Guard/Forward","6\'0\"","170",R.drawable.patsquare,22,149,46)
+        ,Player("Ryan Nealon","Junior","Guard","6\'1\"","165",R.drawable.ryansquare,23,361,124)
+        ,Player("Roman Cutrufello","Senior","Guard","5\'11\"","160",R.drawable.romansquare,24,79,27)
+        ,Player("Lincoln Anderson","Junior","Guard","6\'0\"","155",R.drawable.lincolnsquare,25,10,3)
+        ,Player("Gene Curtin","Junior","Guard/Forward","6\'2\"","155",R.drawable.genesquare,33,8,3)
+        ,Player("Jordan Shaffer","Freshman","Guard","6\'2\"","150",R.drawable.shaffersquare,35,68,23)
+        ,Player("Zach Brister","Senior","Forward","6\'2\"","180",R.drawable.bristersquare,40,58,28)
+        ,Player("Jack Petrillo","Senior","Forward","6\'2\"","205",R.drawable.dudesquare,42,3,1)
+        , Player("Robby Lucas","Sophmore","Forward","6\'2\"","185",R.drawable.robbysquare,44,286,103))
 
 
 }
