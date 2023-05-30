@@ -3,9 +3,12 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alata</item>
         <item>@font/alegreya_sc</item>
+        <item>@font/allan</item>
         <item>@font/almendra</item>
         <item>@font/amethysta</item>
         <item>@font/andada</item>
+        <item>@font/arbutus</item>
+        <item>@font/artifika</item>
         <item>@font/baloo_bhai</item>
         <item>@font/be_vietnam_thin</item>
         <item>@font/beth_ellen</item>
