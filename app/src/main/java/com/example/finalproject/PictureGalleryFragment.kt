@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
 import com.example.finalproject.databinding.FragmentMenuBinding
 import com.example.finalproject.databinding.FragmentPictureGalleryBinding
 
@@ -47,9 +48,8 @@ class PictureGalleryFragment : Fragment() {
     fun openWebPage(url: String) {
         val webpage: Uri = Uri.parse(url)
         val intent = Intent(Intent.ACTION_VIEW, webpage)
-        if (intent.resolveActivity(packageManager) != null) {
             startActivity(intent)
-        }
+
     }
 
     override fun onDestroyView() {
