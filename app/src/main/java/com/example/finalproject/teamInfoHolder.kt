@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finalproject.databinding.ScheduleItemLayoutBinding
 import com.example.finalproject.databinding.TeamInfoItemLayoutBinding
+import com.google.android.material.snackbar.Snackbar
 import kotlin.properties.Delegates
 
 class TeamInfoHolder(val binding: TeamInfoItemLayoutBinding) :
@@ -14,6 +15,7 @@ class TeamInfoHolder(val binding: TeamInfoItemLayoutBinding) :
     private lateinit var currentPlayer: Player
     init{
         binding.root.setOnClickListener({view->
+
             val action = TeamInfoFragmentDirections.actionTeamInfoFragmentToPlayerStatsFragment(binding.name.text.toString(),binding.number.text.toString(),binding.grade.text.toString(),currentPlayer.picture,currentPlayer.totalP,currentPlayer.totalFG)
             binding.root.findNavController().navigate(action)
         })

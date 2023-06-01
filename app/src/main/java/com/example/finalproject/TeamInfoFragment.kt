@@ -7,9 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
 import com.example.finalproject.databinding.FragmentMenuBinding
 import com.example.finalproject.databinding.FragmentTeamInfoBinding
 import com.example.finalproject.databinding.TeamInfoItemLayoutBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 
 class TeamInfoFragment : Fragment() {
     private var _binding: TeamInfoItemLayoutBinding? = null
@@ -28,7 +31,6 @@ class TeamInfoFragment : Fragment() {
        mediaPlayer = MediaPlayer.create(context, R.raw.music)
         mediaPlayer.start()
         mediaPlayer.isLooping=true
-
         return binding.root
     }
     override fun onStop() {

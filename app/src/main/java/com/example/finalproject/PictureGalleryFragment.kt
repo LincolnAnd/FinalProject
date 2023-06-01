@@ -10,6 +10,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import com.example.finalproject.databinding.FragmentMenuBinding
 import com.example.finalproject.databinding.FragmentPictureGalleryBinding
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.NonDisposableHandle.parent
 
 
 class PictureGalleryFragment : Fragment() {
@@ -20,6 +22,12 @@ class PictureGalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentPictureGalleryBinding.inflate(inflater, container, false)
+
+            Snackbar.make(
+                binding.root,
+                "Click for game pictures",
+                Snackbar.LENGTH_SHORT).show()
+
         val myOnClickListener: View.OnClickListener = View.OnClickListener { view ->
             when(view.id) {
                
